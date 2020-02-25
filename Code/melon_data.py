@@ -1,13 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Feb 24 18:28:10 2020
-
-@author: wdp
-"""
-
-# 현성이가 만들어줌
-
-
 import requests
 from bs4 import BeautifulSoup, Comment
 import selenium.webdriver as webdriver
@@ -22,8 +12,6 @@ binary = 'D:\chromedriver/chromedriver.exe'
 # 브라우져를 인스턴스화
 browser = webdriver.Chrome(binary)
 # 구글의 이미지 검색 url 받아옴(아무것도 안 쳤을때의 url)
-
-
 
 index=1401
 a=0
