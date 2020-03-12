@@ -28,7 +28,7 @@ class Alphabet :
 	JUNGSUNG_LIST = ['ㅏ', 'ㅐ', 'ㅑ', 'ㅒ', 'ㅓ', 'ㅔ', 'ㅕ', 'ㅖ', 'ㅗ', 'ㅘ', 'ㅙ', 'ㅚ', 'ㅛ', 'ㅜ', 'ㅝ', 'ㅞ', 'ㅟ', 'ㅠ', 'ㅡ', 'ㅢ', 'ㅣ']
 	JONGSUNG_LIST = [' ', 'ㄱ', 'ㄲ', 'ㄳ', 'ㄴ', 'ㄵ', 'ㄶ', 'ㄷ', 'ㄹ', 'ㄺ', 'ㄻ', 'ㄼ', 'ㄽ', 'ㄾ', 'ㄿ', 'ㅀ', 'ㅁ', 'ㅂ', 'ㅄ', 'ㅅ', 'ㅆ', 'ㅇ', 'ㅈ', 'ㅊ', 'ㅋ', 'ㅌ', 'ㅍ', 'ㅎ']
 
-	def get_alphabetic(self, word):
+	def _get_alphabetic(self, word):
 		split_word_list = list(word)
 		chosung = list()
 		jungsung = list()
@@ -48,3 +48,11 @@ class Alphabet :
 				jongsung.append(self.JONGSUNG_LIST[char3])
 
 		return jungsung, jongsung
+
+	def get_jungsung_alphabetic(self, word) :
+		jungsung, jongsung = self._get_alphabetic(word)
+		return jungsung
+
+	def get_jongsung_alphabetic(self, word) : 
+		jungsung, jongsung = self._get_alphabetic(word)
+		return jongsung
