@@ -1,4 +1,1 @@
-# Develope
-# Korean NLP
-## write lyrics by AI
-### 2020.02.21 ~ 2020.03.13
+# SHOW-ME-THE-LYRICS 의 데이터 및 일부 코드를 저장한 repository 입니다.
